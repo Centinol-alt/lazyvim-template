@@ -22,6 +22,10 @@ keymap.set("n", "te", ":tabedit<CR>", { noremap = true, silent = true, nowait = 
 keymap.set("n", "<tab>", ":tabnext<Return>", opts)
 keymap.set("n", "<s-tab>", ":tabprev<Return>", opts)
 
+-- Save and Exit
+keymap.set("n", "<Leader>w", ":update<Return>", opts)
+keymap.set("n", "<Leader>q", ":quit<Return>", opts)
+
 -- Split window
 keymap.set("n", "ss", ":split<Return>", opts)
 keymap.set("n", "sv", ":vsplit<Return>", opts)
