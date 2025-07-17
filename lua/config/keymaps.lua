@@ -45,3 +45,6 @@ keymap.set("n", "<C-w><down>", "<C-w>-")
 keymap.set("n", "<C-j>", function()
   vim.diagnostic.get_next()
 end, opts)
+
+-- Open LazyGit
+keymap.set("n", "zg", ":LazyGit<CR>", opts)
